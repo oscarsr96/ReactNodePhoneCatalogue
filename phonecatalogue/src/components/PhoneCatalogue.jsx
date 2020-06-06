@@ -25,13 +25,13 @@ class PhoneCatalogue extends React.Component {
   }
 
   componentDidMount(){
-    /*setTimeout(
+    setTimeout(
     function() {
       this.props.addPhones([{id: 1, name: "a", imageFileName: "Galaxy_S7.png" }, {id:2, name:"b"}])
     }
     .bind(this),
     3000
-);*/
+);
     fetch('/phones')
     .then(res => res.json() )
     .then(data => this.props.addPhones(data));
