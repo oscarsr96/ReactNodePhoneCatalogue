@@ -1,0 +1,18 @@
+.outerDiv{
+  display: flex;
+  flex: 0 1 50%;
+  flex-direction: column;
+  flex-flow: column nowrap;
+}
+
+.imageContainer{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.img{
+  max-width: 500;
+  max-height: 500;
+}

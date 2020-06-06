@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/detail.css';
 
 
 class Detail extends React.Component {
@@ -6,11 +7,11 @@ class Detail extends React.Component {
   render(){
     const phone = this.props.phone
     return(
-      <div style={{display: "flex", flex: "0 1 50%", flexDirection: "column", flexFlow: "column nowrap"}}>
-        <div style={{display: "flex", flexDirection: "row", flexWrap: "wrap", flex: 1}}>
-          <img style={{maxWidth: 500, maxHeight: 500}} alt="phone image" src={require('../assets/'+phone.imageFileName)}/>
+      <div className="outerDiv">
+        <div className="imageContainer">
+          <img className="img" alt="phone image" src={require('../assets/'+phone.imageFileName)}/>
         </div>
-        <div style={{display: "flex", flexDirection: "row", flexWrap: "wrap", flex: 1}}>
+        <div className="imageContainer">
           <ul>
             <h3> Name: {phone.name} </h3>
             <h3> Manufacturer: {phone.manufacturer} </h3>

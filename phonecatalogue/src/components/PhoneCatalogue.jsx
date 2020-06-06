@@ -5,6 +5,8 @@ import { Button } from '@material-ui/core';
 import Detail from './Detail.jsx';
 import { connect } from 'react-redux';
 import { addPhones, changeSelectedPhone } from "../redux/actions/index";
+import '../styles/phonecatalogue.css';
+
 
 function mapStateToProps(state) {
   return { phones: state.phones, selectedPhone: state.selectedPhone }
@@ -72,10 +74,10 @@ class PhoneCatalogue extends React.Component {
 
     return (
       <div>
-        <div style={{overFlow: "auto", width: "50%", float:"right", left: "50%", top: "50%" ,position: "absolute"}}>
+        <div className="rightContainer">
             {rightElement}
         </div>
-        <div style={{width: "50%", float:"left"}}>
+        <div className="leftContainer">
             {leftElement}
         </div>
       </div>
