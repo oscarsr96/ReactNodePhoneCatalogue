@@ -22,9 +22,6 @@ function mapDispatchToProps(dispatch) {
 
 
 class PhoneCatalogue extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   //when the component is loaded, request axios to get phones and update state
   componentDidMount(){

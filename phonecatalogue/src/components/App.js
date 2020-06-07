@@ -1,6 +1,6 @@
 import React from 'react';
-import './styles/App.css';
-import PhoneCatalogueRedux from './components/PhoneCatalogue'
+import '../styles/App.css';
+import PhoneCatalogueRedux from './PhoneCatalogue';
 
 function App() {
   return (
