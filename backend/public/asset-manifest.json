@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.d1b05096.chunk.css",
-    "main.js": "/static/js/main.e4f01f23.chunk.js",
-    "main.js.map": "/static/js/main.e4f01f23.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.3b533d26.js",
-    "runtime-main.js.map": "/static/js/runtime-main.3b533d26.js.map",
-    "static/js/2.264ae1e1.chunk.js": "/static/js/2.264ae1e1.chunk.js",
-    "static/js/2.264ae1e1.chunk.js.map": "/static/js/2.264ae1e1.chunk.js.map",
+    "main.css": "/static/css/main.790f2c34.chunk.css",
+    "main.js": "/static/js/main.30144b41.chunk.js",
+    "main.js.map": "/static/js/main.30144b41.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.adcef4e8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.adcef4e8.js.map",
+    "static/js/2.c14253b6.chunk.js": "/static/js/2.c14253b6.chunk.js",
+    "static/js/2.c14253b6.chunk.js.map": "/static/js/2.c14253b6.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d83b9e68a15b49b70de04f7c8f14584f.js": "/precache-manifest.d83b9e68a15b49b70de04f7c8f14584f.js",
+    "precache-manifest.c83bdad4fbca21b4d150ec4dfc1af03e.js": "/precache-manifest.c83bdad4fbca21b4d150ec4dfc1af03e.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.d1b05096.chunk.css.map": "/static/css/main.d1b05096.chunk.css.map",
-    "static/js/2.264ae1e1.chunk.js.LICENSE.txt": "/static/js/2.264ae1e1.chunk.js.LICENSE.txt",
+    "static/css/main.790f2c34.chunk.css.map": "/static/css/main.790f2c34.chunk.css.map",
+    "static/js/2.c14253b6.chunk.js.LICENSE.txt": "/static/js/2.c14253b6.chunk.js.LICENSE.txt",
     "static/media/Galaxy_S7.png": "/static/media/Galaxy_S7.7c5cc069.png",
     "static/media/Honor_10.png": "/static/media/Honor_10.d2ddcc1f.png",
     "static/media/IPhone_7.png": "/static/media/IPhone_7.75be282d.png",
@@ -20,13 +20,12 @@
     "static/media/Xiaomi_MI_A2.jpeg": "/static/media/Xiaomi_MI_A2.b056a898.jpeg",
     "static/media/ZenPhone_5.jpg": "/static/media/ZenPhone_5.cb5f98a3.jpg",
     "static/media/catalogue.jpeg": "/static/media/catalogue.d8d3997b.jpeg",
-    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
     "static/media/phoneagenda": "/static/media/phoneagenda.f1a537c8.bin"
   },
   "entrypoints": [
-    "static/js/runtime-main.3b533d26.js",
-    "static/js/2.264ae1e1.chunk.js",
-    "static/css/main.d1b05096.chunk.css",
-    "static/js/main.e4f01f23.chunk.js"
+    "static/js/runtime-main.adcef4e8.js",
+    "static/js/2.c14253b6.chunk.js",
+    "static/css/main.790f2c34.chunk.css",
+    "static/js/main.30144b41.chunk.js"
   ]
 }
