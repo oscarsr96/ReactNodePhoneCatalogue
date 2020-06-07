@@ -28,13 +28,6 @@ class PhoneCatalogue extends React.Component {
 
   //when the component is loaded, request axios to get phones and update state
   componentDidMount(){
-    setTimeout(
-    function() {
-      this.props.addPhones([{id: 1, name: "a", imageFileName: "Galaxy_S7.png" }, {id:2, name:"b"}])
-    }
-    .bind(this),
-    3000
-);
     axios.get('http://localhost:3000/phones')
       .then(res => {
         console.log(res)

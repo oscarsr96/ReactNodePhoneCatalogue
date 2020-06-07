@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8486c79d550aefb90136ceebfb821e57",
+    "revision": "d9717d91d0e4c4eb1b7f097d607ee947",
     "url": "/index.html"
   },
   {
-    "revision": "332b999b86446ec0b47e",
-    "url": "/static/css/main.f70cf376.chunk.css"
+    "revision": "af25f9d9d94cf9c0005f",
+    "url": "/static/css/main.923081d9.chunk.css"
   },
   {
-    "revision": "4fb68fb7eeebb28a59b6",
-    "url": "/static/js/2.1d1adede.chunk.js"
+    "revision": "af20cd2b433c7158eca6",
+    "url": "/static/js/2.7b55981f.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/static/js/2.1d1adede.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.7b55981f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "332b999b86446ec0b47e",
-    "url": "/static/js/main.991638c0.chunk.js"
+    "revision": "af25f9d9d94cf9c0005f",
+    "url": "/static/js/main.8ab0bb9e.chunk.js"
   },
   {
     "revision": "b85604f279c735a4575a",
@@ -52,11 +52,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/ZenPhone_5.cb5f98a3.jpg"
   },
   {
-    "revision": "d8d3997b3bc4fba079f4c6b99530ca67",
-    "url": "/static/media/catalogue.d8d3997b.jpeg"
-  },
-  {
-    "revision": "f1a537c80cb483f035a4e4d35cf84b6f",
-    "url": "/static/media/phoneagenda.f1a537c8.bin"
+    "revision": "40dac09d9e2051f3fcc4eebefdf9099e",
+    "url": "/static/media/main.40dac09d.png"
   }
 ]);
