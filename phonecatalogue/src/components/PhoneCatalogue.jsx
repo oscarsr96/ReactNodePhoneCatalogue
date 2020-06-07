@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactList from 'react-list';
 import Loader from 'react-loader-spinner';
 import { Button } from '@material-ui/core';
 import Detail from './Detail.jsx';
@@ -44,7 +43,7 @@ class PhoneCatalogue extends React.Component {
   }
 
   renderItems() {
-   return this.props.phones.map((data, i) =>
+   return this.props.phones.map((data) =>
         <div key={data.id}>
           <Button
             color={this.props.selectedPhone === data ? "primary": "default"}
@@ -60,20 +59,30 @@ class PhoneCatalogue extends React.Component {
         </div>);
  }
   render(){
+
+    const phones = this.props.phones.map((data) =>
+         <div key={data.id}>
+           <Button
+             color={this.props.selectedPhone === data ? "primary": "default"}
+             fullWidth={true}
+             variant="contained"
+             onClick={() => this.props.selectedPhone !== data ?
+                           this.props.changeSelectedPhone(data) :
+                           this.props.changeSelectedPhone("")
+                     }
+           >
+             {data.name}
+           </Button>
+         </div>);
+
     const leftElement = this.props.selectedPhone === "" ?
-                  <img style={{width: "100%", height: "100%"}}
+                  <img style={{width: "100%", height: "inherit"}}
                        alt="main image"
                        src={require('../assets/catalogue.jpeg')}
                   /> :
                   <Detail phone={this.props.selectedPhone}/>
 
-    const rightElement = this.props.phones.length > 0 ?
-                        <ReactList
-                            itemRenderer={this.renderItems}
-                            length={this.props.phones.length}
-                            type='uniform'
-                          /> :
-                        <Loader/>
+    const rightElement = this.props.phones.length > 0 ? phones : <Loader/>
 
 
     return (

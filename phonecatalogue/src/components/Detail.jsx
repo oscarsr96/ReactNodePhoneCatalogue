@@ -9,7 +9,7 @@ class Detail extends React.Component {
     return(
       <div className="outerDiv">
         <div className="imageContainer">
-          <img className="img" alt="phone image" src={require('../assets/'+phone.imageFileName)}/>
+          <img style={{height: 400, width: 400}} alt="phone image" src={require('../assets/'+phone.imageFileName)}/>
         </div>
         <div className="imageContainer">
           <ul>

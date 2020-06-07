@@ -10,9 +10,5 @@
   flex: 1;
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-.img{
-  max-width: 500;
-  max-height: 500;
+  align-items: center;
 }
