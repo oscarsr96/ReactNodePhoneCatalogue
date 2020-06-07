@@ -44,7 +44,7 @@ class PhoneCatalogue extends React.Component {
   render(){
 
     const phones = this.props.phones.map((data) =>
-         <div key={data.id}>
+         <div className="phone" key={data.id}>
            <Button
              color={this.props.selectedPhone === data ? "primary": "default"}
              fullWidth={true}
@@ -59,9 +59,9 @@ class PhoneCatalogue extends React.Component {
          </div>);
 
     const leftElement = this.props.selectedPhone === "" ?
-                  <img style={{width: "100%", height: "inherit"}}
+                  <img style={{width: 500, height: 500}}
                        alt="main image"
-                       src={require('../assets/catalogue.jpeg')}
+                       src={require('../assets/main.png')}
                   /> :
                   <Detail phone={this.props.selectedPhone}/>
 
@@ -69,11 +69,11 @@ class PhoneCatalogue extends React.Component {
 
 
     return (
-      <div>
-        <div className="rightContainer">
+      <div clasName="outerDiv">
+        <div className="upContainer">
             {rightElement}
         </div>
-        <div className="leftContainer">
+        <div className="downContainer">
             {leftElement}
         </div>
       </div>

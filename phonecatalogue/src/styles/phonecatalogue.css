@@ -1,12 +1,24 @@
-.rightContainer{
-  width: 50%;
-  left: 50%;
-  position: absolute;
-  align-items: center;
-  margin-top: 10%;
+.upContainer{
+  flex: 1;
 }
 
-.leftContainer{
-  width: 50%;
-  float: left;
+.downContainer{
+  flex: 1;
+  margin-top: 2%
+}
+
+.outerDiv{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.phone{
+  width: auto
+}
+
+@media screen and (min-width: 1100px){
+  .outerDiv {
+    flex-direction: row;
+  }
 }
