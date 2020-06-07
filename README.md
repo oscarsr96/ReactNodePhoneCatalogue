@@ -19,13 +19,13 @@ Unit tests for both backend and frontend code have been created.
     
         cd ReactNodePhoneCatalogue
     
-2. Go to "backend" folder and execute
+2. Go to "backend" folder and execute:
 
         yarn start
     
-3 In the browser, go to 
+3. In the browser, go to:
 
-    localhost:3000
+        localhost:3000
     
 ## Run backend tests
 
