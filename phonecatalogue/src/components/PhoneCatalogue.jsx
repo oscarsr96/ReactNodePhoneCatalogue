@@ -7,11 +7,12 @@ import { addPhones, changeSelectedPhone } from '../redux/actions/index';
 import '../styles/phonecatalogue.css';
 import axios from 'axios';
 
-
+//functions to manage state with redux
 function mapStateToProps(state) {
   return { phones: state.phones, selectedPhone: state.selectedPhone }
 }
 
+//we just have to actions
 function mapDispatchToProps(dispatch) {
   return {
     addPhones: phones => dispatch(addPhones(phones)),
@@ -25,6 +26,7 @@ class PhoneCatalogue extends React.Component {
     super(props);
   }
 
+  //when the component is loaded, request axios to get phones and update state
   componentDidMount(){
     setTimeout(
     function() {
@@ -33,16 +35,17 @@ class PhoneCatalogue extends React.Component {
     .bind(this),
     3000
 );
-  axios.get('http://localhost:3000/phones')
-    .then(res => {
-      console.log(res)
-      const phones = res.data;
-      this.props.addPhones(phones);
-  })
+    axios.get('http://localhost:3000/phones')
+      .then(res => {
+        console.log(res)
+        const phones = res.data;
+        this.props.addPhones(phones);
+    })
   }
 
   render(){
-
+    /*map the phones in the state to show one button per phone
+    if the button is selected, it will update the state and have another color*/
     const phones = this.props.phones.map((data) =>
          <div className="phone" key={data.id}>
            <Button
@@ -58,29 +61,33 @@ class PhoneCatalogue extends React.Component {
            </Button>
          </div>);
 
-    const leftElement = this.props.selectedPhone === "" ?
+
+     //render the list of phones if loaded, if not, a spinner
+     const upElement = this.props.phones.length > 0 ? phones : <Loader/>
+
+
+    //render an image if no phone is selected, otherwise, a Detail component
+    const downElement = this.props.selectedPhone === "" ?
                   <img style={{width: 500, height: 500}}
                        alt="main image"
                        src={require('../assets/main.png')}
                   /> :
                   <Detail phone={this.props.selectedPhone}/>
 
-    const rightElement = this.props.phones.length > 0 ? phones : <Loader/>
-
-
     return (
       <div clasName="outerDiv">
         <div className="upContainer">
-            {rightElement}
+            {upElement}
         </div>
         <div className="downContainer">
-            {leftElement}
+            {downElement}
         </div>
       </div>
     );
 }
 }
 
+//connect to Redux
 const PhoneCatalogueRedux = connect(
   mapStateToProps,
   mapDispatchToProps
