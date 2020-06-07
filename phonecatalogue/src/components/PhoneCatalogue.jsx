@@ -4,8 +4,9 @@ import Loader from 'react-loader-spinner';
 import { Button } from '@material-ui/core';
 import Detail from './Detail.jsx';
 import { connect } from 'react-redux';
-import { addPhones, changeSelectedPhone } from "../redux/actions/index";
+import { addPhones, changeSelectedPhone } from '../redux/actions/index';
 import '../styles/phonecatalogue.css';
+import axios from 'axios';
 
 
 function mapStateToProps(state) {
@@ -27,16 +28,19 @@ class PhoneCatalogue extends React.Component {
   }
 
   componentDidMount(){
-    setTimeout(
+    /*setTimeout(
     function() {
       this.props.addPhones([{id: 1, name: "a", imageFileName: "Galaxy_S7.png" }, {id:2, name:"b"}])
     }
     .bind(this),
     3000
-);
-    fetch('/phones')
-    .then(res => res.json() )
-    .then(data => this.props.addPhones(data));
+);*/
+  axios.get('http://localhost:3000/phones')
+    .then(res => {
+      console.log(res)
+      const phones = res.data;
+      this.props.addPhones(phones);
+  })
   }
 
   renderItems() {
