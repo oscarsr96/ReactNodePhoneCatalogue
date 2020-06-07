@@ -1,25 +1,17 @@
 .outerDiv{
   display:flex;
-  flex: 0 1 50%;
   flex-direction: column;
-  flex-flow: column nowrap;
-  text-align: left;
 }
 
 .imageContainer{
   flex: 1;
-  flex-direction: row;
-  flex-wrap: wrap;
-  display:flex;
-  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .detailContainer{
   flex: 1;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items:flex-start;
-  display:flex;
+  text-align: left;
 }
 
 h3{
@@ -28,4 +20,10 @@ h3{
 
 span{
   color: black
+}
+
+@media screen and (min-width: 1100px){
+  .outerDiv {
+    flex-direction: row;
+  }
 }
