@@ -35,7 +35,9 @@ In the "backend" folder", execute the command:
     
 ## Run frontend tests
 
-In the "phonecatalogue" folder, execute the command:
+In the "phonecatalogue" folder, execute the commands:
+
+    yarn install
 
     yarn test
     
