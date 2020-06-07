@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.0234e7f8.chunk.css",
-    "main.js": "/static/js/main.63f48c82.chunk.js",
-    "main.js.map": "/static/js/main.63f48c82.chunk.js.map",
+    "main.css": "/static/css/main.b09a49a5.chunk.css",
+    "main.js": "/static/js/main.a2b05d27.chunk.js",
+    "main.js.map": "/static/js/main.a2b05d27.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.adcef4e8.js",
     "runtime-main.js.map": "/static/js/runtime-main.adcef4e8.js.map",
     "static/js/2.7b55981f.chunk.js": "/static/js/2.7b55981f.chunk.js",
     "static/js/2.7b55981f.chunk.js.map": "/static/js/2.7b55981f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ebe848bbd8ebb91d10d65aff6dd445ff.js": "/precache-manifest.ebe848bbd8ebb91d10d65aff6dd445ff.js",
+    "precache-manifest.ffc5c24ecc2e885776c9f8d77db88c2d.js": "/precache-manifest.ffc5c24ecc2e885776c9f8d77db88c2d.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.0234e7f8.chunk.css.map": "/static/css/main.0234e7f8.chunk.css.map",
+    "static/css/main.b09a49a5.chunk.css.map": "/static/css/main.b09a49a5.chunk.css.map",
     "static/js/2.7b55981f.chunk.js.LICENSE.txt": "/static/js/2.7b55981f.chunk.js.LICENSE.txt",
     "static/media/Galaxy_S7.png": "/static/media/Galaxy_S7.7c5cc069.png",
     "static/media/Honor_10.png": "/static/media/Honor_10.d2ddcc1f.png",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.adcef4e8.js",
     "static/js/2.7b55981f.chunk.js",
-    "static/css/main.0234e7f8.chunk.css",
-    "static/js/main.63f48c82.chunk.js"
+    "static/css/main.b09a49a5.chunk.css",
+    "static/js/main.a2b05d27.chunk.js"
   ]
 }
