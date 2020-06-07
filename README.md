@@ -15,13 +15,13 @@ Unit tests for both backend and frontend code have been created.
 
 1. Clone the repo
 
-    git clone https://github.com/oscarsr96/ReactNodePhoneCatalogue
+        git clone https://github.com/oscarsr96/ReactNodePhoneCatalogue
     
-    cd ReactNodePhoneCatalogue
+        cd ReactNodePhoneCatalogue
     
 2. Go to "backend" folder and execute
 
-    yarn start
+        yarn start
     
 3 In the browser, go to 
 
