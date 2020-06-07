@@ -61,7 +61,7 @@ class PhoneCatalogue extends React.Component {
 
     //render an image if no phone is selected, otherwise, a Detail component
     const downElement = this.props.selectedPhone === "" ?
-                  <img style={{width: 500, height: 500}}
+                  <img style={{width: 300, height: 300}}
                        alt="main image"
                        src={require('../assets/main.png')}
                   /> :
