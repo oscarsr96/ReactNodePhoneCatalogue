@@ -7,7 +7,7 @@ import configureStore from 'redux-mock-store';
 import * as actions from '../redux/actions/index';
 import {ADD_PHONES} from '../redux/actions/types';
 
-import App from '../App';
+import App from '../components/App';
 
 const mockStore = configureStore([]);
 global.fetch = jest.fn(() => Promise.resolve())
