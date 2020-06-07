@@ -1,14 +1,31 @@
 .outerDiv{
-  display: flex;
+  display:flex;
   flex: 0 1 50%;
   flex-direction: column;
   flex-flow: column nowrap;
+  text-align: left;
 }
 
 .imageContainer{
-  display: flex;
   flex: 1;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  display:flex;
+  margin: 0 auto;
+}
+
+.detailContainer{
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items:flex-start;
+  display:flex;
+}
+
+h3{
+  color: green;
+}
+
+span{
+  color: black
 }

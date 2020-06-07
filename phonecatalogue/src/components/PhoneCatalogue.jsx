@@ -23,17 +23,16 @@ function mapDispatchToProps(dispatch) {
 class PhoneCatalogue extends React.Component {
   constructor(props) {
     super(props);
-    this.renderItems = this.renderItems.bind(this);
   }
 
   componentDidMount(){
-    /*setTimeout(
+    setTimeout(
     function() {
       this.props.addPhones([{id: 1, name: "a", imageFileName: "Galaxy_S7.png" }, {id:2, name:"b"}])
     }
     .bind(this),
     3000
-);*/
+);
   axios.get('http://localhost:3000/phones')
     .then(res => {
       console.log(res)
@@ -42,22 +41,6 @@ class PhoneCatalogue extends React.Component {
   })
   }
 
-  renderItems() {
-   return this.props.phones.map((data) =>
-        <div key={data.id}>
-          <Button
-            color={this.props.selectedPhone === data ? "primary": "default"}
-            fullWidth={true}
-            variant="contained"
-            onClick={() => this.props.selectedPhone !== data ?
-                          this.props.changeSelectedPhone(data) :
-                          this.props.changeSelectedPhone("")
-                    }
-          >
-            {data.name}
-          </Button>
-        </div>);
- }
   render(){
 
     const phones = this.props.phones.map((data) =>

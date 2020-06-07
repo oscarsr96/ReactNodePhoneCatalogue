@@ -11,16 +11,16 @@ class Detail extends React.Component {
         <div className="imageContainer">
           <img style={{height: 400, width: 400}} alt="phone image" src={require('../assets/'+phone.imageFileName)}/>
         </div>
-        <div className="imageContainer">
+        <div className="detailContainer">
           <ul>
-            <h3> Name: {phone.name} </h3>
-            <h3> Manufacturer: {phone.manufacturer} </h3>
-            <h3> Description: {phone.description} </h3>
-            <h3> Color: {phone.color} </h3>
-            <h3> Price: {phone.price} </h3>
-            <h3> Screen: {phone.screen} </h3>
-            <h3> Processor: {phone.processor} </h3>
-            <h3> Ram: {phone.ram} </h3>
+            <h3> Name: <span>{phone.name}</span> </h3>
+            <h3> Manufacturer: <span>{phone.manufacturer}</span> </h3>
+            <h3> Description: <span>{phone.description}</span> </h3>
+            <h3> Color: <span>{phone.color}</span> </h3>
+            <h3> Price: <span>{phone.price}</span> </h3>
+            <h3> Screen: <span>{phone.screen}</span> </h3>
+            <h3> Processor: <span>{phone.processor}</span> </h3>
+            <h3> Ram: <span>{phone.ram}</span> </h3>
           </ul>
         </div>
       </div>
