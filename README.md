@@ -48,3 +48,6 @@ In the "backend" folder, execute:
     docker-compose build
     
     docker-compose up
+    
+    
+PD: due to some problems I could not easily resolve when adding files outside the repo, I had to create a new one. The first commits are in oscarsr96/ReactPhoneCatalogue
